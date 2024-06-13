@@ -64,6 +64,25 @@
             </div>
         </div>
        </section>
+<p>
+  <title>My Medical Website with Health Bot</title>
+</p>
+    <!-- Other content of your website -->
+
+  <!-- Health Bot Container -->
+  <div id="healthbot" role="main"></div>
+  <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+  <script>
+    window.WebChat.renderWebChat(
+      {
+        directLine: window.WebChat.createDirectLine({
+          token: 'I5tdP8S4ie8.2FrHIYNCAxwGFOs5NzlZPDi0djW6T5O17va2kRSbH78' // Replace with your Direct Line secret for the Health Bot
+        }),
+      },
+      document.getElementById('healthbot')
+    );
+  </script>
+
 
     <!------------------------category section-------------------------->
     <section id="category">
